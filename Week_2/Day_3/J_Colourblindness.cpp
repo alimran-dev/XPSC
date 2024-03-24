@@ -23,9 +23,12 @@ int main()
         {
             if (a[i] != b[i])
             {
-                if ((a[i] == 'G' && b[i] != 'B') || (a[i] == 'B' && b[i] != 'G'))
+                if ((a[i] == 'G' && b[i] == 'B') || (a[i] == 'B' && b[i] == 'G'))
+                    continue;
+                else
                 {
                     flag = false;
+                    break;
                 }
             }
         }
